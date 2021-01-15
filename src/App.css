@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ais-InstantSearch{
+  width : 90%;
+  max-width: 900px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ais-SearchBox {
+  margin: 1rem 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.ais-Pagination {
+  margin: 1rem 0;
+}
+.ais-Pagination-list{
+  display : flex;
+  list-style-type: none;
+}
+.ais-Pagination-link{  
+  width: 2rem;
+  height: 2rem;
+  display : flex; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 0.1rem;
+  text-decoration: none;
+  color : black;
+  transition : all 0.2s ;
+}
+.ais-Pagination-link:hover{
+  background-color : #1959d1; 
+  color : white;  
 }
 
-.App-link {
-  color: #61dafb;
+.row{
+  display : flex;   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-panel{
+  width : 25%; 
+}
+
+.right-panel{
+  width  : 75%;
+}
+.ais-Hits-list{
+  list-style: none;
+  margin-left :-1rem;
+}
+.ais-Hits-item{
+  margin-bottom : 1rem;
+  width : calc(80%);
+}
+
+.ais-Hits-item img{
+  margin-right: 1rem;
+  float: left;
+}
+.hit-name { margin-bottom: .5em }
+.hit-description { color: #888; font-size: 14px; margin-bottom: .5em }
+
+.hit{
+  display: table;  
+}
+
+.ais-SearchBox-form{
+  width : 100% ;
+  max-width : 600px;  
+}
+.ais-SearchBox-input{
+  width: 80%; 
+  padding: 0.25rem;
+}
+.ais-SearchBox-submit,
+.ais-SearchBox-reset{
+  width : 5%;
+  padding:0.25rem 0;
 }
